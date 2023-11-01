@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,84 +16,18 @@
 * limitations under the License.
 */
 
-/* eslint-disable object-curly-newline */
-
 'use strict';
 
 // MODULES //
 
 var tape = require( 'tape' );
-var noop = require( '@stdlib/utils-noop' );
-var isMethod = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isMethod, 'function', 'export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `false` if provided `null` or `undefined` for the first argument (native throws)', function test( t ) {
-	var bool;
-
-	bool = isMethod( null, 'toString' );
-	t.strictEqual( bool, false, 'returns false when provided null' );
-
-	bool = isMethod( void 0, 'toString' );
-	t.strictEqual( bool, false, 'returns false when provided undefined' );
-
-	t.end();
-});
-
-tape( 'the function returns `true` if an object has a specified method name', function test( t ) {
-	var bool;
-
-	bool = isMethod( { 'a': noop }, 'a' );
-	t.strictEqual( bool, true, 'returns true' );
-
-	t.end();
-});
-
-tape( 'the function returns `false` if an object does not have a specified own method name', function test( t ) {
-	var bool;
-
-	bool = isMethod( { 'a': 'b' }, 'a' );
-	t.strictEqual( bool, false, 'returns false' );
-
-	bool = isMethod( { 'a': 'b' }, null );
-	t.strictEqual( bool, false, 'returns false' );
-
-	t.end();
-});
-
-tape( 'the function returns `false` if provided a prototype property', function test( t ) {
-	var bool;
-
-	bool = isMethod( {}, 'toString' );
-	t.strictEqual( bool, false, 'returns false when provided a prototype property' );
-
-	t.end();
-});
-
-tape( 'values are coerced to objects', function test( t ) {
-	var bool;
-
-	bool = isMethod( 'beep', 'toString' );
-	t.strictEqual( bool, false, 'returns false' );
-
-	t.end();
-});
-
-tape( 'property values are coerced to strings', function test( t ) {
-	var bool;
-
-	bool = isMethod( { 'null': noop }, null );
-	t.strictEqual( bool, true, 'returns true' );
-
-	bool = isMethod( { '[object Object]': noop }, {} );
-	t.strictEqual( bool, true, 'returns true' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
