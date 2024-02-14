@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isMethod from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-method@esm/index.mjs';
+import isMethod from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-method@v0.2.0-esm/index.mjs';
 ```
 
 #### isMethod( value, property )
@@ -120,7 +120,7 @@ bool = isMethod( value, 'toString' );
 <body>
 <script type="module">
 
-import isMethod from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-method@esm/index.mjs';
+import isMethod from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-method@v0.2.0-esm/index.mjs';
 
 var bool = isMethod( { 'a': isMethod }, 'a' );
 // returns true
