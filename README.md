@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isMethod from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-method@deno/mod.js';
+import isMethod from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-method@v0.2.0-deno/mod.js';
 ```
 
 #### isMethod( value, property )
@@ -115,7 +115,7 @@ bool = isMethod( value, 'toString' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isMethod from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-method@deno/mod.js';
+import isMethod from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-method@v0.2.0-deno/mod.js';
 
 var bool = isMethod( { 'a': isMethod }, 'a' );
 // returns true
