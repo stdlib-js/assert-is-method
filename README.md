@@ -35,14 +35,32 @@ limitations under the License.
 
 > Test if an object has a specified method name.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-method
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isMethod from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-method@deno/mod.js';
+var isMethod = require( '@stdlib/assert-is-method' );
 ```
 
 #### isMethod( value, property )
@@ -115,7 +133,7 @@ bool = isMethod( value, 'toString' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isMethod from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-method@deno/mod.js';
+var isMethod = require( '@stdlib/assert-is-method' );
 
 var bool = isMethod( { 'a': isMethod }, 'a' );
 // returns true
@@ -171,7 +189,7 @@ bool = isMethod( { '[object Object]': isMethod }, {} );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -188,7 +206,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -236,11 +254,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property/tree/deno
+[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property
 
-[@stdlib/assert/is-function]: https://github.com/stdlib-js/assert-is-function/tree/deno
+[@stdlib/assert/is-function]: https://github.com/stdlib-js/assert-is-function
 
-[@stdlib/assert/is-method-in]: https://github.com/stdlib-js/assert-is-method-in/tree/deno
+[@stdlib/assert/is-method-in]: https://github.com/stdlib-js/assert-is-method-in
 
 <!-- </related-links> -->
 
